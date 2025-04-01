@@ -1,0 +1,47 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="h-screen flex flex-col justify-center items-center text-center">
+        <h1 class="text-5xl font-bold opacity-0" id="title">Hello, I'm Oscar Ball</h1>
+        <p class="text-lg mt-4 opacity-0" id="subtitle">collage student aspiring to be a cyber security professional </p>
+    </header>
+    
+    <section class="p-10" id="projects">
+        <h2 class="text-4xl font-semibold text-center mb-10">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
+                <h3 class="text-2xl font-medium">Pong</h3>
+                <p class="mt-2">I have created a working cross-platform rendition of the clasic 70s arcade game pong.</p>
+
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
+                <h3 class="text-2xl font-medium">Ransomware Detection & Prevention System</h3>
+                <p class="mt-2">Monitors files, detects ransomware encryption, kills malicious processes, and logs threats(in progress).</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
+                <h3 class="text-2xl font-medium">3D printed robot </h3>
+                <p class="mt-2">I have been working on a programable robot that can preform multiple diffrent tasks.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="p-10 text-center" id="contact">
+        <h2 class="text-4xl font-semibold">Contact Me</h2>
+        <p class="mt-4">Email:ojb007@yahoo.com</p>
+        <p>LinkedIn:<a href ="https://www.linkedin.com/in/oscar-ball-2a99aa354/">Oscar Ball</a></p>
+        <p>GitHub:<a href="https://github.com/Bally07">bally007</a></p>
+    </section>
+
+    <script>
+        gsap.fromTo("#title", { opacity: 0, y: -50 }, { opacity: 1, y: 0, duration: 1.2 });
+        gsap.fromTo("#subtitle", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.2, delay: 0.5 });
+    </script>
+</body>
+</html>
